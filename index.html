@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>AROUND THE WORLD IN EIGHTY DAYS </h1>
+        <h2>by Jules Verne</h2>
+    </header>
+    <main>
+        <p>
+            IN the year i8/z, No. 7 Savile Row, Burlington Gardens*—
+the house where Sheridan* died in 1814—was occupied by
+Phileas Fogg,* Esq. This gentleman was one of the most
+remarkable, and indeed most remarked upon, members of the
+Reform Club,* although he seemed to go out of his way to do
+nothing that might attract any attention.</p>
+    <p>
+        One of the greatest public speakers to honour his country
+        had thus been replaced by the aforesaid Phileas Fogg. The
+        latter was an enigmatic figure about whom nothing was
+        known, except that he was a thorough gentleman and one of
+        the most handsome figures in the whole of high society.
+    </p>
+    <p>
+        He was said to look like Byron:* his head at least, for
+        his feet were beyond reproach—but a mustachioed and
+        bewhiskered Byron, an impassive Byron, one who might have
+        lived for a thousand years without ever growing old.
+    </p>
+    <p>
+        Although clearly British, Mr Fogg might not have been a
+Londoner. He had never been spotted in the Stock Exchange,
+the Bank, or the City. The basins and docks of London had
+never berthed a ship for an owner called Phileas Fogg. This
+gentleman was not on any board of directors. His name had
+never rung out in a barristers' chambers, whether at the
+Temple, Lincoln's Inn, or Gray's Inn. He had never pleaded in
+the Courts of Chancery, Queen's Bench, or Exchequer, nor in
+an Ecclesiastical Court.* He was not engaged in industry,
+business, commerce, or agriculture. He did not belong to the
+Royal Institution of Great Britain, the London Institution, the
+Artizan Society, the Russell Institution, the Western Literary
+Institution, the Law Society, nor even that Society for the
+Combined Arts and Sciences* which enjoys the direct patronage
+ of Her Gracious Majesty. In sum, he was not a member of
+any of the associations that breed so prolifically in the capital
+of the United Kingdom, from the Harmonic Union* to the Entomological
+ Society, founded chiefly with the aim of exterminating harmful insects.*
+    </p>
+    <p>
+        Phileas Fogg belonged to the Reform Club—and that was
+all.
+Should anyone express surprise that such a mysterious
+gentleman be numbered amongst the members of that distinguished
+ society,* it can be pointed out here that he was
+accepted on the recommendation of Messrs Baring Brothers,*
+with whom he had an unlimited overdraft facility. Hence a
+certain 'profile', for his cheques were always paid on sight and
+his account remained invariably in the black.
+    </p>
+
+    <p>
+        Was this Phileas Fogg well off? Without any doubt. But
+how he had made his fortune, even the best informed could
+not say. And Mr Fogg was the last person one would have
+approached to find out. In any case, while in no way extravagant,
+ he was not tight-fisted either. Whenever support was
+needed for some noble, useful, or generous cause, he would
+provide it, noiselessly and even anonymously.
+
+    </p>
+    <p>
+        lll
+    </p>
+    <p>
+        lll
+    </p><p>
+        lll
+    </p><p>
+        lll
+    </p><p>
+        lll
+    </p><p>
+        lll
+    </p><p>
+        lll
+    </p><p>
+        lll
+    </p><p>
+        lll
+    </p><p>
+        lll
+    </p><p>
+        lll
+    </p><p>
+        lll
+    </p><p>
+        lll
+    </p><p>
+        lll
+    </p>
+    </main>
+
+    <footer>
+        <a id="back-to-top" href="#">Top</a>
+    </footer>
+
+    <script>
+        /*
+        *-----------------
+        *- Define variables
+        *- Calculate the document height and set the offset to a quarter of the that values
+        *- Event listeners for scroll and click
+        *-----------------
+        */
+
+        var btt = document.getElementById("back-to-top");
+        var body = document.body;
+        var docElem = document.documentElement;
+        var offset = 100;
+        var scrollPos, docHeight;
+
+        //Calculate the document height
+        docHeight = Math.max(body.scrollHeight, body.offsetHeight, docElem.clientHeight, docElem.scrollHeight, docElem.offsetHeight);
+        if( docHeight != 'undefined'){
+            offset = docHeight/4;
+        }
+
+        //Add scroll event listener
+        window.addEventListener('scroll', function(event){
+            scrollPos = body.scrollTop || docElem.scrollTop;
+            
+            btt.className = ( scrollPos > offset) ? "visible" : '' ;
+        })
+
+    </script>
+</body>
+</html>
